@@ -7,7 +7,7 @@ type Int struct {
 	sequence int
 }
 
-func (s *Int) GetSequence() int {
+func (s *Int) GetNext() int {
 	s.Lock()
 	defer s.Unlock()
 
